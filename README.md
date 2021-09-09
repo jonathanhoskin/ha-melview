@@ -15,11 +15,18 @@ climate:
     password: MY_PASSWORD
     local: yes
 
+sensor:
+  - platform: melview
+    email: MY_EMAIL@gmail.com
+    password: MY_PASSWORD
+    local: yes
+
 logger:
   default: warn
   logs:
     custom_components.melview.climate: debug
     custon_components.melview.melview: debug
+    custom_components.melview.sensor: debug
 ```
 
 ## License
